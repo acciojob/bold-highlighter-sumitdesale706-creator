@@ -1,13 +1,13 @@
-let link = document.querySlector("a");
-let strong = document.querySelectorAll("strong");
-
-link.addEventListener("mouseover", highlight);
-link.addEventListener("mouseout", return_normal);
+let s = document.querySelectorAll("strong");
 
 function highlight() {
-     strong.style.color = "rgb(0, 128, 0)";
+	 for(let elem of s){
+		 elem.style.color = "rgb(0, 128, 0)";
+	 }
 }
 
 function return_normal() {
-     strong.style.color = "rgb(0, 0, 0)";
+     for(let elem of s){
+		 elem.style.color = "rgb(0, 0, 0)";
+	 }
 }
